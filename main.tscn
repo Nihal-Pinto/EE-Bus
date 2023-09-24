@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7oeghr7isx6y"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_r2sqn"]
+
+[node name="master" type="HBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+alignment = 1
+script = ExtResource("1_r2sqn")
+
+[node name="p1" type="SubViewportContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="game" type="SubViewport" parent="p1"]
+handle_input_locally = false
+size = Vector2i(480, 1080)
+render_target_update_mode = 4
+
+[node name="p2" type="SubViewportContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="game" type="SubViewport" parent="p2"]
+handle_input_locally = false
+size = Vector2i(480, 1080)
+render_target_update_mode = 4
+
+[node name="p3" type="SubViewportContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="game" type="SubViewport" parent="p3"]
+handle_input_locally = false
+size = Vector2i(480, 1080)
+render_target_update_mode = 4
+
+[node name="p4" type="SubViewportContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="game" type="SubViewport" parent="p4"]
+handle_input_locally = false
+size = Vector2i(480, 1080)
+render_target_update_mode = 4
